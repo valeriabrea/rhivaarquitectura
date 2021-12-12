@@ -1,0 +1,14 @@
+@mixin textoH1 {
+    font-family: 'Quicksand', sans-serif;
+    color: #731c2c;
+    font-size: 21px;
+    word-spacing: 4px;
+}
+
+@mixin background {
+    background-image: url(Images/Background_Image.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
