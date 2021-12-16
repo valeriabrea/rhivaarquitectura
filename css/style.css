@@ -1,115 +1,334 @@
-@media screen and (max-width: 480px) {
-  header {
-    background-color: orange;
-  }
-}
-@media screen and (min-width: 767px) and (max-width: 949px) {
-  header {
-    background-color: yellow;
-  }
-}
-@media screen and (min-width: 980px) {
-  header {
-    background-color: red;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
+/*Comienzo cabecera General*/
+*{
+    margin: 0;
+    padding: 0;
 }
 
 a:link, a:visited, a:active {
-  text-decoration: none;
-  color: #a06b74;
+    text-decoration:none;
+    color: #a06b74;
 }
 
-.headerHome {
-  background-color: #0e2c36;
-  height: 100px;
-  margin-bottom: 5px;
+.headerHome{
+    background-color: #0e2c36;
+    height: 100px;
+    width: 1500px;
+    margin-bottom: 5px;
 }
 
-header nav ul {
-  width: 60%;
-  float: right;
-  font-family: "Quicksand", sans-serif;
-  color: #a06b74;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-transform: uppercase;
-  word-spacing: 20px;
-  font-size: 16px;
-  list-style-type: none;
-  padding-top: 40px;
+.menu{
+    width: 1050px;
+    display: inline-block;
+    text-align: end;
+    font-family: 'Quicksand', sans-serif;
+    color: #a06b74;
+    justify-content: space-around;
+    text-transform: uppercase;
+    word-spacing: 35px;
+    font-size: 16px;
+    list-style-type: none;
 }
 
-.Logo {
-  float: left;
-  padding-left: 4em;
-  height: 100px;
-  width: 14%;
+.Logo{
+padding-left: 25px;;
+height: 100px;
 }
 
-.Footer {
-  margin-top: 5px;
-  padding-top: 30px;
-  background-color: #0e2c36;
-  padding-bottom: 10px;
-  font-family: "Quicksand", sans-serif;
-  color: #a06a73;
-  word-spacing: 30px;
-  font-size: 18px;
-  text-align: center;
+/*Fin cabecera General*/
+
+
+/*Comienzo zona central Index*/
+.Central{
+    background-color: #415459;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.logoFooter {
-  float: left;
-  padding-top: 3px;
-  padding-left: 1em;
-  height: 6%;
-  width: 6%;
+#Intro{ 
+    border-style: groove;
+    border-radius: 5px;
+    background: #849ca4;
+    font-family: 'Quicksand', sans-serif;
+    color: #731c2c;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: justify;
+    padding:15px;
+    word-spacing: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-nav ul li {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
+.fotosCentral{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 8px;
+    gap: 30px;
 }
 
-.redesFooter1 {
-  width: 100px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+.imagenCentral1, .imagenCentral2, .imagenCentral3 {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #849ca4;
 }
 
-#contacto {
-  margin-right: 4em;
-  margin-left: 56em;
-  display: flex;
-  justify-content: space-around;
-  word-spacing: 5px;
+/*Fin zona central Index*/
+
+
+/*Comienzo footer General*/
+.Footer{
+    margin-top: 5px;    
+    padding-top: 30px   ;
+    background-color: #0e2c36;
+    padding-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: hsl(350, 22%, 52%);
+    word-spacing: 30px;
+    font-size: 18px;
+    text-align: center;
+    }
+
+nav ul li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
-  header {
-    background-color: orange;
+.redesFooter1{
+    width: 100px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: flex-start;
+}
+
+#contacto{
+    margin-right: 4em;
+    margin-left: 56em; 
+    display: flex;
+    justify-content:space-around;
+    word-spacing: 5px;
+}
+
+/*Fin footer General*/  
+
+
+/*Comienzo zona central Servicios.html*/
+.seccionesServicios{ 
+    height: 800px;
+    width: 1300px;
+    background-color: #415459;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: 'Quicksand', sans-serif;
+    color: #731c2c;
+    display:flex;
+    justify-content: center;
+    }
+
+.containerServicios{
+    height: 100px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 5px;
+    border-radius: 10px;
+    gap: 25px;
+    }
+    
+.serv1 .serv2 .serv3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 3em;
+}
+
+.card-group{
+    height: 100%;
+    width: 100%;
+}
+
+.card-body{
+    border-radius: 8%;
+    box-shadow: #83939c;
+    transition: all 0.25s;
+}
+
+/*Fin zona central Servicios.html*/
+
+
+/*Comienzo zona central "Nosotros"*/
+.gridContainer{
+    height: 480px;
+    width: 1200px;   
+    display:grid;
+    grid-template-rows: 660px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;  
+    justify-content: space-around;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.socia1{
+    background-color: #a06b79;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    padding:20px 12px;
+    text-align: center;
+}
+
+.socia2{
+    background-color: #a06b79;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    padding:20px 12px;
+    text-align: center;
+}
+
+.socia3{
+    background-color: #a06b79;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    padding:20px 12px;
+    text-align: center;
+}
+
+/*Fin zona central "Nosotros"*/
+
+
+/*Comienzo zona central "Proyectos.html"*/
+#backCarousel{
+    background-color: #415459;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+#carouselExampleFade{
+    height: 45%;
+    width: 45%;
+}
+
+.carousel, .carousel-inner > .item > img {
+    margin-left: 380px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
+
+/*Fin zona central "Proyectos.html"*/
+
+
+/*Comienzo zona central central "Contacto.html"*/
+.formularioContacto{
+    height: 500px;
+    padding: 50px; 
+    background-color: #415459;
+    background-size: 100vw 100vh;
+    font-family: 'Quicksand', sans-serif;
 }
-@media screen and (min-width: 767px) and (max-width: 949px) {
-  header {
+
+form{
+    width: 500px;
+    margin: auto;
+    background: rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+h2{
+    color: #a06b79;
+    text-align: center;
+    margin: 0;
+    font-size: 5px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 5px;
+    border-top: #83939c;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+background: #83939c;
+color: #fff;
+padding: 20px;
+}
+
+#boton:hover {
+cursor: pointer;
+}
+
+@media (max-widht: 480px) {
+    form{
+        width: 100%;
+    }
+}
+
+/*Fin zona central "Contacto.html"*/
+
+
+/*Mobile First"*/
+
+@media only screen and (max-width: 480px) {
+    .mobileFirst{
     background-color: yellow;
-  }
+    width: 100%;
+    }
+    .fotosCentral{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #Intro{
+        width: 60%;
+    }
+    .menuIndex{
+        display: flex;
+        justify-items: space-evenly;
+    }
 }
-@media screen and (min-width: 980px) {
-  header {
-    background-color: red;
-  }
+@media only screen and (min-width: 767px) and (max-width: 949px) {
+    .mobileFirst{
+        background-color: orange;
+    }
+    .menu {
+        display: flex;
+        align-items:flex-start;
+        text-align:center;
+      }
+      .menu a {
+        text-align: left;
+        margin: 5px;
+    }
+    .fotosCentral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+ }
 }
-
-/*# sourceMappingURL=style.css.map */
