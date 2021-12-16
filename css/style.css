@@ -170,10 +170,10 @@ nav ul li{
 
 /*Comienzo zona central "Nosotros"*/
 .gridContainer{
-    height: 480px;
+    height: 300px;
     width: 1200px;   
     display:grid;
-    grid-template-rows: 660px;
+    grid-template-rows: 640px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;  
     justify-content: space-around;
@@ -206,6 +206,18 @@ nav ul li{
     border-radius: 10px;
     padding:20px 12px;
     text-align: center;
+}
+
+.fotosocia1{
+    width: 70%;
+}
+
+.fotosocia2{
+    width: 70%;
+}
+
+.fotosocia3{
+    width: 70%;
 }
 
 /*Fin zona central "Nosotros"*/
