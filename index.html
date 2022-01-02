@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
-    <meta name="description" content="Somos Rhiva Arquitectura. Te ayudamos a resolver todas tus necesidades para llevar adelante tu proyecto: planos, renders, croquis, bocetos y mucho más">
-    <meta name="keywords" content="arquitectura, bocetos, croquis, planos, renders, arquitectos, diseño, diseñadores, profesionales, Rhiva, edificios">
+<meta name="description" content="Somos Rhiva Arquitectura. Te ayudamos a resolver todas tus necesidades para llevar adelante tu proyecto: planos, renders, croquis, bocetos y mucho más">
+<meta name="keywords" content="arquitectura, bocetos, croquis, planos, renders, arquitectos, diseño, diseñadores, profesionales, Rhiva, edificios">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -17,41 +17,60 @@
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 
 <body>
      <!--Comienzo cabecera-->
-     <header class="headerHome">
-        <a href="index.html"><img class="Logo" src="Images/Logo.jpg" alt="Volver a Pagina Principal" /></a>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Servicios.html">Servicios</a></li>
-                <li><a href="Proyectos.html">Proyectos</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="header">
+  <div class="nav">
+    <a href="index.html"><img class="Logo" src="Images/Logo.jpg" alt="Volver a Pagina Principal" /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Servicios.html">Servicios</a></li>
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+</div>
     <!--Fin cabecera-->
 
     <!--Comienzo zona central-->
     <main class="Central">
         <section>
+          <h2 class="tituloSeccion">RHIVA ARQUITECTURA</h2>
         <p id="Intro">
             Hola! les presentamos a RHIVA, un proyecto que surge a partir de tres futuras arquitectas. Al haber disfrutado de trabajar juntas en varios trabajos de la universidad, quisimos reunir nuestras habilidades y fortalezas para formar un nuevo grupo de trabajo dedicado a la visualización y representación arquitectónica.
             Buscamos aplicar nuestros conocimientos e ideas en un nuevo servicio, ofreciendo renderizaciones 3D (realistas o artísticas), planos, modelos, croquis, esquemas, láminas... todo lo que se nos proponga.
         </p>
     </section>
 
-    <div class="fotosCentral">
-        <img class="imagenCentral1" src="Images/Planos/thumbnail_PLANO-EDIT-COMPLETO.png" alt="Planos">
-        <!--Link-->
-        <img class="imagenCentral2" src="images/Render Servicios.png" alt="Renders">
-        <!--Link--> 
-        <img class="imagenCentral3" src="Images/Croquis/CROQUIS-2-PRUEBA.png" alt="Bocetos">
-        <!--Link-->
+    <div class="card-group">
+        <div class="card">
+          <img src="Images/Planos/Plano final.png" class="card-img-top" alt="Casa Chacarita">
+          <div class="card-body">
+            <h5 class="card-title">CASA CHACARITA</h5>
+            <p class="card-text">Tomando como referente a la arquitectura de Louis Kahn, adoptamos conceptos fundamentales en el proyecto, como la habitabilidad de los muros, la modulación y el lenguaje de carpinterías, y la relación entre sí de los vanos para lograr una continuidad visual entre el exterior y el interior. El programa de la vivienda se basa en dos volúmenes, uno dedicado a los habitares más sociales, y el otro, a las actividades privadas, ambos vinculados por el acceso.</p>
+          </div>
         </div>
+        <div class="card">
+          <img src="Images/Render/Hospital Final.jpg" class="card-img-top" alt="Hospital Pilar">
+          <div class="card-body">
+            <h5 class="card-title">HOSPITAL PILAR</h5>
+            <p class="card-text">El sector de internación se implanta como puente panorámico sobre el sector de consultorios y el acceso al auditorio, los balcones de los consultorios tienen visuales hacia el parque. Debajo, los pequeños sectores de espera se perciben como anexos que se desprenden de la curva, culminando en el auditorio que se expande hacia el entorno.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="Images/Render/Polideportivo final.png" class="card-img-top" alt="Polideportivo">
+          <div class="card-body">
+            <h5 class="card-title">POLIDEPORTIVO</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+        </div>
+      </div>
+
     </main>
  <!--Fin zona central-->
 
@@ -59,12 +78,15 @@
  <footer class="Footer">
     <nav>
         <ul> 
-            <li><a href="https://www.instagram.com/rhiva.arq/"> <img src="Images/Logos resized/instagram.png"></a></li>
-            <li><a href="https://www.linkedin.com/"> <img src="Images/Logos resized/linkedin.png"></a></li>
-            <li><a href="https://www.facebook.com/rhiva.arq"> <img src="Images/Logos resized/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/rhiva.arq/"> <img src="Images/Logos resized/LogoInstagram1.png"></a></li>
+            <li><a href="https://www.facebook.com/rhiva.arq"> <img src="Images/Logos resized/LogoFacebook1.png"></a></li>
         </ul>  
     </nav>
   
+    <section id="firmaFooter">
+        <a href="index.html"><img class="Logo" src="Images/Logos resized/FirmaRhivaResized.png" /></a>
+    </section>
+
     <section id="contacto">
     <p> <a href="rhiva.arquitectura@gmail.com">Email</a></p>
     <p> <a href="Tel:+541156663211">Teléfono</a></p>

@@ -4,38 +4,58 @@
     padding: 0;
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
-    color: #a06b74;
-}
-
-.headerHome{
+.header{
     background-color: #0e2c36;
+    font-family: 'Heebo', sans-serif;
+    background-size: cover;
+    background-position: center center;
     height: 100px;
-    width: 1500px;
-    margin-bottom: 5px;
+    width: 1400px;
+    padding-top: 10px;
+    position:fixed;
+    top: 0;
+    z-index: 5;
+    
 }
 
-.menu{
-    width: 1050px;
-    display: inline-block;
-    text-align: end;
-    font-family: 'Quicksand', sans-serif;
-    color: #a06b74;
-    justify-content: space-around;
-    text-transform: uppercase;
-    word-spacing: 35px;
-    font-size: 16px;
-    list-style-type: none;
+.nav ul{
+    list-style: none;
+    display: flex;
 }
 
-.Logo{
-padding-left: 25px;;
-height: 100px;
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform:uppercase;
+    margin-left: 20px;
+    padding: 40px;
+    transition: all .5s ease;
+
 }
 
+.nav{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    column-gap: 50px;
+    align-items: center;
+    justify-items: right;
+    margin: left;
+    padding-right: 10px;
+
+}
+
+.nav img{
+    width: 90px;
+    height: auto; 
+    margin-left: 10px;
+    margin-right: 20px;
+    }
+
+.nav ul li a:hover{
+    color:#000;
+    background: #fff;
+  }
 /*Fin cabecera General*/
-
 
 /*Comienzo zona central Index*/
 .Central{
@@ -44,39 +64,43 @@ height: 100px;
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 25px;
+    padding-right: 5px;
+}
+
+.tituloSeccion{
+    background: #849ca4;
+    font-family: 'Heebo', sans-serif;
+    color: #76182a;
+    font-size: 56px;
+    line-height: 28px;
+    text-align: center;
+    justify-content: center;
+    padding: 25px;
 }
 
 #Intro{ 
     border-style: groove;
     border-radius: 5px;
     background: #849ca4;
-    font-family: 'Quicksand', sans-serif;
-    color: #731c2c;
+    font-family: 'Heebo', sans-serif;
+    color: #76182a;
     font-size: 21px;
     line-height: 28px;
     text-align: justify;
     padding:15px;
     word-spacing: 4px;
-    margin-top: 5px;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
-.fotosCentral{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    padding: 8px;
-    gap: 30px;
-}
-
-.imagenCentral1, .imagenCentral2, .imagenCentral3 {
-    height: 350px;
-    width: 350px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    border-style: double;
-    border-color: #849ca4;
+.card-group{
+    font-family: 'Heebo', sans-serif;
+    color: #76182a;
+    gap: 15px;
+    margin: 8px 10px;
+    padding: 20px;
+    height: 100vh;
 }
 
 /*Fin zona central Index*/
@@ -84,13 +108,12 @@ height: 100px;
 
 /*Comienzo footer General*/
 .Footer{
-    margin-top: 5px;    
-    padding-top: 30px   ;
+    margin-top: 6px;    
+    padding-top: 40px;
     background-color: #0e2c36;
-    padding-bottom: 10px;
-    font-family: 'Quicksand', sans-serif;
-    color: hsl(350, 22%, 52%);
-    word-spacing: 30px;
+    font-family: 'Heebo', sans-serif;
+    color: #fff;
+    word-spacing: 50px;
     font-size: 18px;
     text-align: center;
     }
@@ -101,8 +124,8 @@ nav ul li{
     justify-content: center;
 }
 
-.redesFooter1{
-    width: 100px;
+.firmaFooter{
+    width: 70px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -117,22 +140,31 @@ nav ul li{
     display: flex;
     justify-content:space-around;
     word-spacing: 5px;
+    padding-bottom: 25px;
 }
 
+#firmaFooter{
+    display: block;
+    align-items: flex-start;
+    text-align: left;
+}
 /*Fin footer General*/  
 
 
 /*Comienzo zona central Servicios.html*/
+
 .seccionesServicios{ 
-    height: 800px;
+    height: 600px;
     width: 1300px;
     background-color: #415459;
     background-position: center;
     background-repeat: repeat;
-    font-family: 'Quicksand', sans-serif;
-    color: #731c2c;
+    font-family: 'Heebo', sans-serif;
+    color: #fff;
     display:flex;
     justify-content: center;
+    padding-top: 10px;
+    margin-top: 10px;
     }
 
 .containerServicios{
@@ -182,7 +214,7 @@ nav ul li{
 }
 
 .socia1{
-    background-color: #a06b79;
+    background-color:  #546c54;
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -191,7 +223,7 @@ nav ul li{
 }
 
 .socia2{
-    background-color: #a06b79;
+    background-color: #546c54;
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -200,7 +232,7 @@ nav ul li{
 }
 
 .socia3{
-    background-color: #a06b79;
+    background-color:  #546c54;
     width: 80%;
     height: 80%;
     border-radius: 10px;
@@ -225,20 +257,24 @@ nav ul li{
 
 /*Comienzo zona central "Proyectos.html"*/
 #backCarousel{
+    margin-top: 80px;
+    height: 100%;
     background-color: #415459;
     background-position: center;
     background-repeat: repeat;
+    z-index: 1;
 }
 
 #carouselExampleFade{
-    height: 45%;
-    width: 45%;
+    height: 50%;
+    width: 90%;
 }
 
 .carousel, .carousel-inner > .item > img {
-    margin-left: 380px;
+    margin-left: 60px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    z-index: 1;
   }
 
 /*Fin zona central "Proyectos.html"*/
@@ -246,29 +282,32 @@ nav ul li{
 
 /*Comienzo zona central central "Contacto.html"*/
 .formularioContacto{
-    height: 500px;
+    height: 450px;
     padding: 50px; 
+    margin-top: 50px;
     background-color: #415459;
     background-size: 100vw 100vh;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 form{
-    width: 500px;
-    margin: auto;
+    height: 100px;
+    width: 600px;
+    padding-top: 40px;
+    margin-right: 250px;
     background: rgba(0,0,0,0.1);
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 10px;
+    margin-top: 30px;
     border-radius: 7px;
 }
 
 h2{
-    color: #a06b79;
+    color: #76182a;
     text-align: center;
     margin: 0;
     font-size: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 input, textarea{
